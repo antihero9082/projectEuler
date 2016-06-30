@@ -3,3 +3,10 @@ os: linux
 files:
   - source: /
     destination: /hosting/www/vhost/playerline.com/html
+    permissions:
+- object: /
+  owner: hosting
+  group: hosting
+  mode: 664
+  type:
+    - file
